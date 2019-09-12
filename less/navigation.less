@@ -1,1 +1,50 @@
 // Navigation Styles here
+header {
+
+    .header-topBox {
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 10vh;
+        padding: 0% 21%;
+        border-bottom: 2px dashed @navigation-border;
+
+        .navBar {
+            // display: flex;
+            // justify-content: space-between;
+            width: 40%;
+            
+            font-size:2rem;
+            
+            nav {
+                display: flex;
+                justify-content: space-evenly;
+                
+                // border: 1px solid green;
+            
+                a {
+                    width:25%;
+                    
+                    font-size: 1.7rem;
+                    text-decoration: none;  
+                }//closes the anchor
+            }//closes the nav
+        }//closes the navBar
+    }//closes the header-topBox
+}//closes the header
+
+    .underBox {
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        border-bottom: 2px dashed @navigation-border;
+
+        img {
+            width:100%;
+            margin-bottom:3.8%;
+        }
+
+
+    }
+
+
