@@ -167,42 +167,50 @@ img {
   max-width: 800px;
   width: 100%;
 }
-header .header-topBox {
+header {
+  display: flex;
+  justify-content: center;
+  border-bottom: 2px dashed #C0C0C0;
+}
+header .topBox {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 10vh;
-  border-bottom: 2px dashed #C0C0C0;
 }
-header .header-topBox .Bar {
+header .topBox .Bar {
   width: 40%;
   font-size: 2rem;
 }
 @media (max-width:500px) {
-  header .header-topBox .Bar {
+  header .topBox .Bar {
     width: 100%;
     text-align: center;
   }
 }
-header .header-topBox nav {
+header .topBox nav {
   display: flex;
   justify-content: space-evenly;
 }
-header .header-topBox nav a {
+header .topBox nav a {
   width: 25%;
   font-size: 1.7rem;
   margin: 4%;
   text-decoration: none;
 }
 @media (max-width:500px) {
-  header .header-topBox nav {
+  header .topBox nav {
     width: 100%;
     justify-content: space-between;
   }
 }
 @media (max-width:500px) {
-  header .header-topBox {
+  header .topBox {
     flex-direction: column;
+  }
+}
+@media (max-width:500px) {
+  header {
     padding: 0% 2%;
   }
 }
@@ -238,6 +246,19 @@ header .header-topBox nav a {
     margin: 3%;
   }
 }
+.home .underBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-bottom: 2px dashed #C0C0C0;
+}
+.home .underBox img {
+  width: 100%;
+}
+.home .underBox .smallbox {
+  padding-top: 3%;
+  margin-bottom: 1%;
+}
 .home .content-section {
   margin: 30px 0;
   display: flex;
@@ -267,6 +288,12 @@ header .header-topBox nav a {
 }
 .home .content-section .img-content img {
   border-radius: 10px;
+}
+@media (max-width:500px) {
+  .home .content-section .img-content img {
+    width: 100%;
+    padding: 0;
+  }
 }
 @media (max-width:500px) {
   .home .content-section .img-content {

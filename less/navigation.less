@@ -1,13 +1,16 @@
 // Navigation Styles here
 header {
+    display:flex;
+    justify-content: center;
+    border-bottom: 2px dashed @navigation-border;
 
-    .header-topBox {
+
+    .topBox {
         display:flex;
         justify-content: space-between;
         align-items: center;
         height: 10vh;
-        border-bottom: 2px dashed @navigation-border;
-
+        
         .Bar {
             width: 40%;
             font-size:2rem;
@@ -40,28 +43,35 @@ header {
             
         @media @mobile {
             flex-direction: column;
-            padding: 0% 2%;
+            // padding: 0% 2%;
+            
         }//closes the media query
 
     }//closes the header-topBox
     
+    @media @mobile {
+        
+        padding: 0% 2%;
+        
+    }//closes the media query
+
 }//closes the header
 
- .underBox {
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    border-bottom: 2px dashed @navigation-border;
+    .underBox {
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        border-bottom: 2px dashed @navigation-border;
 
-    img {
-        width:100%;
-    }//closes the image
+        img {
+            width:100%;
+        }//closes the image
 
-    .smallbox {
-        padding-top:3%;
-        margin-bottom: 1%;
-    }//closes the smallbox
+        .smallbox {
+            padding-top:3%;
+            margin-bottom: 1%;
+        }//closes the smallbox
 
-}// closes the underBox
+    }// closes the underBox
 
 
