@@ -1,4 +1,11 @@
 .home {
+  // margin:5%;
+  
+  @media @mobile {
+    margin:3%;
+  }//closes the media query
+
+  
 
   .content-section {
     margin: 30px 0;
@@ -6,11 +13,21 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
-   
+    @media @mobile {
+      .direction(column , center);
+    }//closes the media query
+
+  
     
     .text-content {
       width: 48%;
       padding-right: 1%;
+
+      @media @mobile {
+        width:100%;
+        padding:0;
+      }//closes the media query
+  
     }
 
     .img-content {
@@ -19,24 +36,58 @@
 
       img {
         border-radius: 10px;
-      }
-    }
-  }
+
+        @media @mobile {
+          width:100%;
+          padding:0;
+        }//closes the media query
+
+      }//closes the img
+
+      @media @mobile {
+        width:100%;
+        padding:0;
+      }//closes the media query
+
+
+    }//closes the img-content
+  }//closes the content-section
 
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
 
+    @media @mobile {
+      .direction(column-reverse , center);
+      width:100%;
+    }//closes the media query
+
     .text-content {
       padding-left: 1%;
       padding-right: 0;
-    }
+
+
+      @media @mobile {
+        width:100%;
+        padding:0;
+      }//closes the media query
+
+    }//closes the text-content
 
     .img-content {
       padding-right: 1%;
       padding-left: 0;
-    }
-  }
+
+      @media @mobile {
+        width:100%;
+        padding:0;
+      }//closes the media query
+
+    }//closes the img-content
+
+  }//closes the inverse-content
+  
+
 
   .content-destination {
     width: 75%;
@@ -53,9 +104,25 @@
     display: flex;
     justify-content: space-between;
 
+    @media @mobile {
+      .direction(column , center);
+      
+    }//closes the media query
+
+
     .destination {
       width: 30%;
       margin-bottom: 30px;
-    }
+
+      @media @mobile {
+        width:80%;
+        
+      }//closes the media query
+
+    }//closes the destination
+    
+  }//closes the content-pick
+  .btn {
+    .custom-btn(#028080, 200px, white);
   }
 }// home
